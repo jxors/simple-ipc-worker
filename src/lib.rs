@@ -166,8 +166,6 @@ fn time() -> u64 {
 pub struct IpcConfig {
     max_lifetime_seconds: u64,
     kill_delay: Duration,
-    hide_stdout: bool,
-    hide_stderr: bool,
 }
 
 impl Default for IpcConfig {
@@ -175,8 +173,6 @@ impl Default for IpcConfig {
         Self {
             max_lifetime_seconds: 300,
             kill_delay: Duration::from_secs(1),
-            hide_stdout: false,
-            hide_stderr: false,
         }
     }
 }
