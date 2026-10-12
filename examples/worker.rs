@@ -1,6 +1,6 @@
 use std::os::fd::FromRawFd;
 use std::os::unix::prelude::OwnedFd;
-use std::process::{Command, Stdio, exit};
+use std::process::{Command, exit};
 
 use clap::Parser;
 use simple_ipc_worker::{IpcClient, IpcConfig};
